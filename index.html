@@ -1,49 +1,291 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luisa María Bravo — CV</title>
     <link rel="stylesheet" href="style.css" />
-    <title>CV Luisa Bravo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="grid-bg"></div>
+
     <header>
-      <h1>Luisa Bravo 2</h1>
-      <p>Perfil profesional breve</p>
+      <div class="header-inner">
+        <div class="name-block">
+          <p class="label">// perfil profesional</p>
+          <h1>Luisa María<br /><span class="accent">Bravo</span></h1>
+          <p class="tagline">
+            Docente · Tecnóloga Educativa · Transformación Digital
+          </p>
+        </div>
+        <div class="contact-block">
+          <div class="contact-item">
+            <span class="contact-icon">@</span>
+            <a href="mailto:luisamaria.bravo@gmail.com"
+              >luisamaria.bravo@gmail.com</a
+            >
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">⌖</span>
+            <span>Buenos Aires, Argentina</span>
+          </div>
+        </div>
+      </div>
+      <div class="header-bar"></div>
     </header>
+
     <main>
+      <!-- EXPERIENCIA -->
       <section>
-        <h2>Perfil</h2>
-        <p>
-          Soy estudiante de programación con conocimientos en HTML, CSS y
-          JavaScript
-        </p>
+        <h2 class="section-title">
+          <span class="section-num">01</span> Experiencia Laboral
+        </h2>
+
+        <div class="timeline">
+          <article class="job">
+            <div class="job-meta">
+              <span class="job-period">mar. 2023 → presente</span>
+            </div>
+            <div class="job-content">
+              <h3>Profesora</h3>
+              <p class="employer">Universidad Nacional de Hurlingham</p>
+              <ul class="tag-list">
+                <li>Introducción a Lógica y Problemas Computacionales</li>
+                <li>Taller de Lenguajes de Marcado y Tecnologías Web</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job">
+            <div class="job-meta">
+              <span class="job-period">may. 2022 → presente</span>
+            </div>
+            <div class="job-content">
+              <h3>Profesora — Analista de Sistemas</h3>
+              <p class="employer">
+                Instituto Superior Técnico Ntra. Sra. del Buen Viaje
+              </p>
+              <ul class="tag-list">
+                <li>Prácticas Profesionalizantes II</li>
+                <li>HTML · CSS · JavaScript · React</li>
+              </ul>
+            </div>
+          </article>
+          <article class="job">
+            <div class="job-meta">
+              <span class="job-period">proyecto personal</span>
+            </div>
+            <div class="job-content">
+              <h3>Extractor de Presupuestos PDF a Excel</h3>
+              <p class="employer">Freelance / Proyecto Personal</p>
+              <p class="job-desc">
+                Desarrollé una app que transforma PDFs en Excel automáticamente.
+                Reduce tareas manuales de carga de datos.
+              </p>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>Streamlit</li>
+                <li>pandas</li>
+              </ul>
+              <a
+                href="https://github.com/marialu2016/presupuesto-kcy"
+                target="_blank"
+                class="project-link"
+                >🔗 Ver proyecto en GitHub</a
+              >
+            </div>
+          </article>
+          <article class="job">
+            <div class="job-meta">
+              <span class="job-period">anterior</span>
+            </div>
+            <div class="job-content">
+              <h3>Formadora de Instructores</h3>
+              <p class="employer">
+                DGCyE — Dirección General de Cultura y Educación
+              </p>
+              <ul class="tag-list">
+                <li>Modalidad semipresencial</li>
+                <li>Formación Profesional</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job">
+            <div class="job-meta">
+              <span class="job-period">anterior</span>
+            </div>
+            <div class="job-content">
+              <h3>Directora · Instructora</h3>
+              <p class="employer">CFP Tres de Febrero</p>
+              <p class="job-desc">
+                Gestión institucional, coordinación de equipos, articulación con
+                sector empresarial. Administración de plataforma Moodle. Dictado
+                de cursos en pareja pedagógica (empresas Tecnocom y Asurín).
+              </p>
+              <ul class="tag-list">
+                <li>Moodle</li>
+                <li>Bases de Datos</li>
+                <li>Planilla de Cálculo</li>
+                <li>Diseño Web</li>
+                <li>Ofimática</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job">
+            <div class="job-meta">
+              <span class="job-period">anterior</span>
+            </div>
+            <div class="job-content">
+              <h3>Docente TIC</h3>
+              <p class="employer">Nivel Secundario</p>
+              <ul class="tag-list">
+                <li>Tecnologías de la Información y la Comunicación</li>
+              </ul>
+            </div>
+          </article>
+        </div>
       </section>
+
+      <!-- FORMACIÓN -->
       <section>
-        <h2>Tecnologías</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
+        <h2 class="section-title">
+          <span class="section-num">02</span> Formación Académica
+        </h2>
+
+        <div class="edu-grid">
+          <div class="edu-card highlight">
+            <span class="edu-status ongoing">En curso</span>
+            <h3>Maestría en Transformación Digital</h3>
+            <p class="edu-inst">Universidad Nacional de La Plata</p>
+          </div>
+          <div class="edu-card">
+            <span class="edu-status done">Completo</span>
+            <h3>Licenciatura en Informática Educativa</h3>
+            <p class="edu-inst">Universidad Nacional de Lanús</p>
+          </div>
+          <div class="edu-card">
+            <span class="edu-status done">Completo</span>
+            <h3>Profesora en Informática</h3>
+            <p class="edu-inst">Inst. del Profesorado del Consudec</p>
+          </div>
+          <div class="edu-card">
+            <span class="edu-status done">Completo</span>
+            <h3>Analista de Sistemas de Computación</h3>
+            <p class="edu-inst">Instituto Ntra. Sra. de Luján B.V.</p>
+          </div>
+          <div class="edu-card">
+            <span class="edu-status done">Completo</span>
+            <h3>Instructor de Formación Profesional</h3>
+            <p class="edu-inst">CONET</p>
+          </div>
+          <div class="edu-card">
+            <span class="edu-status done">Completo</span>
+            <h3>Formadora de Instructores</h3>
+            <p class="edu-inst">—</p>
+          </div>
+        </div>
       </section>
+
+      <!-- CURSOS / FORMACIÓN CONTINUA -->
       <section>
-        <h2>Proyectos</h2>
-        <article>
-          <h3>Nombre del proyecto</h3>
-          <p>Descripción breve del proyecto</p>
-          <a href="#">Ver proyecto</a>
-        </article>
+        <h2 class="section-title">
+          <span class="section-num">03</span> Cursos y Seminarios
+        </h2>
+        <div class="courses-list">
+          <div class="course-item">
+            <span class="course-dot"></span>
+            <span
+              >Transformación Digital: Fundamentos, Tópicos y Herramientas —
+              UNLP</span
+            >
+          </div>
+          <div class="course-item">
+            <span class="course-dot"></span>
+            <span
+              >Aspectos Sociales de la Transformación Digital (posgrado)</span
+            >
+          </div>
+          <div class="course-item">
+            <span class="course-dot"></span>
+            <span>Design Thinking — UTN CABA</span>
+          </div>
+          <div class="course-item">
+            <span class="course-dot"></span>
+            <span>Educación IT CABA — Programación / Tecnología</span>
+          </div>
+          <div class="course-item">
+            <span class="course-dot"></span>
+            <span
+              >Coaching y Liderazgo — Escuela Argentina de Educación
+              Ejecutiva</span
+            >
+          </div>
+          <div class="course-item">
+            <span class="course-dot"></span>
+            <span
+              >Congreso Virtual: Red Educativa para una Escuela del Siglo XXI —
+              España</span
+            >
+          </div>
+          <div class="course-item">
+            <span class="course-dot"></span>
+            <span>Tareas del Tutor en Sistemas de Formación a Distancia</span>
+          </div>
+        </div>
       </section>
+
+      <!-- STACK TÉCNICO -->
       <section>
-        <h2>Contacto</h2>
-        <p>Email: tuemail@gmail.com</p>
-        <p>GitHub: <a href="#">Tu usuario</a></p>
+        <h2 class="section-title">
+          <span class="section-num">04</span> Stack Técnico
+        </h2>
+        <div class="stack-grid">
+          <div class="stack-group">
+            <h4>Web Front-End</h4>
+            <div class="chips">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">React</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <h4>Datos & Productividad</h4>
+            <div class="chips">
+              <span class="chip">SQL / Bases de Datos</span>
+              <span class="chip">Planilla de Cálculo</span>
+              <span class="chip">Ofimática</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <h4>Plataformas E-Learning</h4>
+            <div class="chips">
+              <span class="chip">Moodle</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <h4>Metodologías</h4>
+            <div class="chips">
+              <span class="chip">Design Thinking</span>
+              <span class="chip">Modalidad Híbrida</span>
+              <span class="chip">Formación a Distancia</span>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <!-- PIE -->
+
     <footer>
-      <p>2026 - Tu Nombre</p>
+      <p>
+        Luisa María Bravo &mdash; <span class="accent">CV Web</span> &mdash;
+        2025
+      </p>
     </footer>
   </body>
 </html>
